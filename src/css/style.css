@@ -160,6 +160,32 @@ label{
 .default-section{
 	padding: 60px 0;
 }
+.checkbox-group input[type="checkbox"]{
+	display: none;
+}
+.checkbox-group label{
+	font-size: 16px;
+	color: #34404b;
+	cursor: pointer;
+}
+.checkbox-group + .checkbox-group label{
+	margin-top: 35px;
+}
+.checkbox-group label::before{
+	content: '';
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	border: 4px solid #edf8f2;
+	background-color: #edf8f2;
+	margin-right: 13px;
+}
+.checkbox-group input[type="checkbox"]:checked+ label{
+	color: #ff5912;
+}
+.checkbox-group input[type="checkbox"]:checked+ label::before{
+	border-color: #ff5912;
+}
 .item, .small-item {
 	background-color: #fff;
 	padding: 30px 10px;
@@ -424,23 +450,28 @@ a.order-now:hover{
 .block-sale div:first-child{
 	transform: rotate(-45deg);
 }
-.block-sale div:last-child{
+.block-sale .block-top{
 	transform: rotate(45deg);
 	position: absolute;
 	top: 0;
 }
-.block-sale span{
+.block-sale .text-inside{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-25%);
+}
+.text-inside span{
 	color: #fff;
 }
-.block-sale span.sale-title{
+.text-inside span:first-child{
+	top:-10px;
 	font-size: 12px;
 	font-family: 'Harmonia_italic';
-	transform: rotate(45deg);
 }
-.block-sale span.sale-amount{
+.text-inside span:last-child{
 	font-family: "Harmonia_black";
 	font-size: 18px;
-	transform: rotate(45deg);
+	top:-30px;
 }
 .full-winter span{
 	display: block;
@@ -476,8 +507,40 @@ a.order-now:hover{
 	letter-spacing: 0.6em;
 	color: rgba(52, 64, 75, 0.4);
 }
-
-
+/* category styles  start*/
+.category-wrap{
+	margin-top: 120px;
+}
+.category-wrap .item{
+	margin-bottom: 30px;
+}
+.categories li{
+	font-family: "Harmonia_semibold";
+	line-height: 50px;
+	font-size: 16px;
+	color: #34404b;
+	margin-bottom: 4px;
+}
+.categories li:hover{
+	color: #ff5912;
+}
+.aside-section{
+	padding: 40px;
+}
+.aside-section + .aside-section{
+	margin-top: 30px;
+}
+.aside-section-title{
+	font-family: "Harmonia_black";
+	font-size: 18px;
+	color: #ff5912;
+	margin-bottom: 35px;
+}
+.category-wrap .load-more{
+	margin-top: 28px;
+	margin-bottom: 120px;
+}
+/* category styles  end*/
 /* MAIN END */
 footer.default-section{
 	margin-top: 60px;
