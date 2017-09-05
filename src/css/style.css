@@ -118,6 +118,12 @@ label{
 .btn-default:active{
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
+.btn-radius{
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
 /* default classes end */
 
 /* default component start */
@@ -163,6 +169,7 @@ label{
 .checkbox-group input[type="checkbox"]{
 	display: none;
 }
+
 .checkbox-group label{
 	font-size: 16px;
 	color: #34404b;
@@ -437,10 +444,12 @@ a.order-now:hover{
 }
 .kit{
 	height:100px;
-	padding: 10px 60px;
+	padding: 10px 47px 10px 60px;
 }
 .block-sale{
 	position: relative;
+	margin-right: 60px;
+	margin-left: 12px;
 }
 .block-sale>div{
 	display: inline-block;
@@ -482,10 +491,11 @@ a.order-now:hover{
 	font-family: "Harmonia_black";
 	margin-bottom: 8px;
 }
-.full-winter .sale-description{
+.full-winter span.sale-description{
 	line-height: 30px;
 	font-size: 12px;
 	color: #495662;
+	flex-wrap: nowrap;
 }
 .sale-price{
 	color: #ff5912;
@@ -500,7 +510,7 @@ a.order-now:hover{
 }
 .sale .kit span.adv-title{
 	font-size: 16px;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 .sale .kit span.size{
 	font-size: 12px;
@@ -508,6 +518,55 @@ a.order-now:hover{
 	color: rgba(52, 64, 75, 0.4);
 }
 /* category styles  start*/
+.range{
+	margin-top: 65px;
+}
+.min-value, .max-value{
+	position: absolute;
+	top: -250%;
+	font-size: 14px;
+	color: #34404b;
+	font-family: "Harmonia_semibold";
+	transform: translateX(-50%);
+	left: 50%;
+}
+.ui-widget.ui-widget-content{
+	border:none;
+	background-color: #edf0f2;
+	height: 3px;
+	width: 185px;
+}
+.ui-widget-header /* inside */{
+	background-color: #34404b;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, 
+.ui-widget-header .ui-state-default, .ui-button,
+.ui-button.ui-state-disabled:hover,
+.ui-button.ui-state-disabled:active{
+ 	border: none;
+	height: 12px;
+	width: 12px;
+	background-color: #34404b;
+	border-radius: 50%;
+}
+.ui-corner-all{
+	border-radius: 0;
+}
+.range-input-reoup{
+	margin-top: 35px;
+}
+.range-input-reoup + .range-input-reoup{
+	margin-left: 23px;
+}
+.range-input-reoup input[type="number"]{
+	background-color: #edf0f2;
+	height: 25px;
+}
+.range-input-reoup label{
+	margin-right: 15px;
+	font-size: 14px;
+	font-family: "Harmonia_semibold";
+}
 .category-wrap{
 	margin-top: 120px;
 }
@@ -541,6 +600,102 @@ a.order-now:hover{
 	margin-bottom: 120px;
 }
 /* category styles  end*/
+
+/* product styles start */
+
+.product-wrap{
+	padding-top: 100px;
+	padding-bottom: 125px;
+	margin-bottom: 60px;
+}
+.product-carousel{
+	width: 330px;
+}
+.title-wrap{
+	width: 403px;
+}
+.text-wrap{
+	width: 515px;
+	padding-bottom: 40px;
+}
+.title-wrap .subtitle{
+	margin-bottom: 40px;
+}
+.text-wrap p{
+	font-size: 16px;
+	line-height: 30px;
+	color: #495662;
+}
+.choose-size span,
+.quantity span{
+	margin-right: 16px;
+	font-family: 'Harmonia_semibold';
+	font-size: 18px;
+	color: #34404b;
+}
+.size-radio input[type="radio"]{
+	display: none;
+}
+.size-radio label{
+	font-size: 14px;
+	color: #34404b;
+	font-family: "Harmonia_semibold";
+	text-transform: uppercase;
+	cursor: pointer;
+	position: relative;
+}
+.size-radio label::before{
+	content: '-';
+	position: absolute;
+	left: 15px;
+	color: #34404b;
+}
+.last label::before{
+	display: none;
+}
+.size-radio input[type="radio"]:checked +label{
+	color: #ff5912;
+	font-size: 18px;
+}
+.size-radio +.size-radio{
+	margin-left: 20px;
+}
+.order-form {
+	padding: 40px 0;
+	border-top: 1px solid #edeff1;
+	border-bottom: 1px solid #edeff1;
+} 
+.quantity{
+	position: relative;
+}
+.quantity::before{
+	content: '';
+	position: absolute;
+	height:15px;
+	width: 1px;
+	border-left: 1px solid #edeff1;
+	left: -90px;
+}
+.order-form, .order-now{
+	width: 630px;
+}
+.order-now{
+	padding-top: 60px;
+}
+.product-price{
+	margin-right: auto;
+	font-family: 'Harmonia_black';
+	font-size: 20px;
+	color: #34404b;
+}
+.product-share {
+	align-items: flex-end;
+}
+.product-share li{
+	margin-right: 25px;
+}
+/* product style end */
+
 /* MAIN END */
 footer.default-section{
 	margin-top: 60px;
