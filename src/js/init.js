@@ -73,8 +73,22 @@ $( function() {
 
         });
     });
+    // Can also be used with $(document).ready()
+    $(window).load(function() {
+        $('.item-flexslider').flexslider({
+            animation: "slide"
+        });
+    });
 
     ///formstyler init
     $('.custom-number').styler();
+    
+
+    //Flex slider
+    $('.header-nav').slicknav({
+        appendTo: 'header .bottom-header .flex-container.justify-sp-between',
+        label: ''
+        
+    });
 
 });
