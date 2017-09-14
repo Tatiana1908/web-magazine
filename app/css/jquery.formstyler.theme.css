@@ -32,7 +32,7 @@
 	-ms-user-select: none;
 	user-select: none;
 	cursor: pointer;
-	left: 0;
+	left: 45px;
 	height: 32px;
 }
 .jq-number__spin:focus{
@@ -45,7 +45,7 @@
 }
 
 .jq-number__spin.plus {
-	right: 0;
+	right: 45px;
 	left: auto;
 }
 
@@ -81,11 +81,9 @@
 	border-bottom: none;
 	border-left: 5px solid transparent;
 }
-.jq-number__spin.minus:hover:after {
-	border-top-color: #000;
-}
+.jq-number__spin.minus:hover:after,
 .jq-number__spin.plus:hover:after {
-	border-bottom-color: #000;
+	border-top-color: #000;
 }
 
 .jq-number__spin.minus:after {

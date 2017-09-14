@@ -30,7 +30,7 @@
 </head>
 <body>
 <!-- HEADER START -->
-<header class="bg-white">
+<header class="bg-white header">
     <div class="top-header">
         <div class="container">
             <div class="flex-container justify-sp-between">
@@ -79,55 +79,64 @@
 
         <!-- Place somewhere in the <body> of your page -->
             <div class="item-flexslider">
-              <ul class="slides">
-                <li>
-                    <div class="items-carousel-description">
-                        <div class="title big orange-text">
-                            <span>FULL WINTER KIT</span>
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="items-carousel-description">
+                                <div class="title big orange-text">
+                                    <span>FULL WINTER KIT</span>
+                                </div>
+                                <span class="subtitle">Half Jacket + Skiny Trousers + Boot leather</span>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                <div class="price-wraper">
+                                    <span class="price">Price : 120$</span>
+                                    <a class="order-now orange-text"href="">
+                                    <span class="custom-icon icon-cart-hover-ic"> </span> Order Now
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <span class="subtitle">Half Jacket + Skiny Trousers + Boot leather</span>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                        <div class="price-wraper">
-                            <span class="price">Price : 120$</span>
-                            <a class="order-now orange-text"href="">
-                            <span class="custom-icon icon-cart-hover-ic"> </span> Order Now
-                            </a>
+                        <div class="item">
+                            <div class="items-carousel-description">
+                                <div class="title big orange-text">
+                                    <span>FULL WINTER KIT</span>
+                                </div>
+                                <span class="subtitle">Half Jacket + Skiny Trousers + Boot leather</span>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                <div class="price-wraper">
+                                    <span class="price">Price : 120$</span>
+                                    <a class="order-now orange-text"href="">
+                                    <span class="custom-icon icon-cart-hover-ic"> </span> Order Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="items-carousel-description">
+                                <div class="title big orange-text">
+                                    <span>FULL WINTER KIT</span>
+                                </div>
+                                <span class="subtitle">Half Jacket + Skiny Trousers + Boot leather</span>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                <div class="price-wraper">
+                                    <span class="price">Price : 120$</span>
+                                    <a class="order-now orange-text"href="">
+                                    <span class="custom-icon icon-cart-hover-ic"> </span> Order Now
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </li>
-                <li>
-                    <div class="items-carousel-description">
-                        <div class="title big orange-text">
-                            <span>FULL WINTER KIT</span>
-                        </div>
-                        <span class="subtitle">Half Jacket + Skiny Trousers + Boot leather</span>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                        <div class="price-wraper">
-                            <span class="price">Price : 120$</span>
-                            <a class="order-now orange-text"href="">
-                            <span class="custom-icon icon-cart-hover-ic"> </span> Order Now
-                            </a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="items-carousel-description">
-                        <div class="title big orange-text">
-                            <span>FULL WINTER KIT</span>
-                        </div>
-                        <span class="subtitle">Half Jacket + Skiny Trousers + Boot leather</span>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                        <div class="price-wraper">
-                            <span class="price">Price : 120$</span>
-                            <a class="order-now orange-text"href="">
-                            <span class="custom-icon icon-cart-hover-ic"> </span> Order Now
-                            </a>
-                        </div>
-                    </div>
-                </li>
-              </ul>
-            </div>
-                
+                </div>
+            </div>    
         </div>
     </section>
     <section class="default-section">
@@ -481,7 +490,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+</footer>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>

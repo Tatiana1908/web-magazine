@@ -7,18 +7,19 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bootstrap 101 Template</title>
 
-    <!-- Bootstrap -->
+     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <!-- JQuery UI -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+
     <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
     
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/sprite.css">
     <link rel="stylesheet" href="css/style.css">
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -28,7 +29,7 @@
 </head>
 <body>
 <!-- HEADER START -->
-<header class="bg-white">
+<header class="bg-white header">
     <div class="top-header">
         <div class="container">
             <div class="flex-container justify-sp-between">
@@ -73,7 +74,10 @@
     <div class="product-wrap  bg-white">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5 col-xs-12">
+                    <div class="title big orange-text text-center hidden-lg hidden-md">
+                        <span>FULL WINTER KIT</span>
+                    </div>
                     <div class="product-carousel center-block">
                         <!-- Place somewhere in the <body> of your page -->
                         <div class="flexslider">
@@ -95,10 +99,10 @@
                 <div class="col-md-7">
                     <div class="product-description">
                         <div class="title-wrap">
-                            <div class="title big orange-text">
+                            <div class="title big orange-text hidden-xs hidden-sm">
                                 <span>FULL WINTER KIT</span>
                             </div>
-                                <span class="subtitle text-center">Half Jacket + Skiny Trousers + Boot leather</span>
+                                <span class="subtitle">Half Jacket + Skiny Trousers + Boot leather</span>
                         </div>
                         <div class="text-wrap">
                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
@@ -130,7 +134,7 @@
                                     </div>
                                     <div class="quantity flex-container align-center">
                                         <span>Choose Quantity</span>
-                                        <input type="number" name="quantity" class="custom-number" value="1">
+                                        <input type="number" name="quantity" class="custom-number" value="1" min="1">
                                     
                                     </div>
                                 </form>
@@ -144,7 +148,9 @@
                                     <li><a href=""><span class="custom-icon icon-add-to-cart-ic"></span></a></li>
                                     <li><a href=""><span class="custom-icon icon-like-ic"></span></a></li>
                                 </ul>
-                                <input type="submit" class="btn btn-default btn-radius"  for="product-option" placeholder="Order Now">
+                                <div class="submit">
+                                    <input type="submit" class="btn btn-default btn-radius"  for="product-option" value="Order Now">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -160,7 +166,7 @@
             <span class="subtitle text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
             <div class="new-items">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="item">
                             <div class="item-img">
                                 <a href="category.html">
@@ -194,7 +200,7 @@
                             
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="item">
                             <div class="item-img">
                                 <a href="">
@@ -228,7 +234,7 @@
                             
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="item">
                             <div class="item-img">
                                 <a href="">
@@ -262,7 +268,7 @@
                             
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="item">
                             <div class="item-img">
                                 <a href="">
@@ -327,39 +333,33 @@
 <footer class="default-section bg-white">
         <div class="container">
             <div class="flex-container footer-content">
-                <div class="row">
-                    <div class="first-column">
-                        <div class="col-md-4">
-                            <div class="first-column">
+                <div class="row flex-container">
+                        <div class="col-footer-4 first-column">
                                 <img src="img/logo.png" alt="">
                                 <span>shopy c 2015 . your copy right here</span>
-                            </div>
                         </div>
-                    </div>
-                    <div class="second-column">
-                        <div class="col-md-2">
-                            <ul class="footer-nav-link">
+                
+                        <div class="col-footer-2">
+                            <ul class="footer-nav-link second-column">
                                 <li><a href="">about us</a></li>
                                 <li><a href="">contact us</a></li>
                                 <li><a href="">support</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-2">
-                            <ul class="footer-nav-link">
+                        <div class="col-footer-2">
+                            <ul class="footer-nav-link second-column">
                                 <li><a href="">our feed</a></li>
                                 <li><a href="">terms and conditions</a></li>
                                 <li><a href="">our privacy</a></li>
                             </ul>
                         </div>  
-                        <div class="col-md-2">
-                            <ul class="footer-nav-link">
+                        <div class="col-footer-2">
+                            <ul class="footer-nav-link second-column">
                                 <li><a href="">join us</a></li>
                                 <li><a href="">live support</a></li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="third-column">
-                        <div class="col-md-2">
+                        <div class="col-footer-2-12 third-column">
                             <span class="orange-text">Payment Method</span>
                             <ul class="icons flex-container">
                                 <li><span class="custom-icon icon-amex-ic"></li>
@@ -367,9 +367,8 @@
                                 <li><span class="custom-icon icon-visa-ic"></li>
                                 <li><span class="custom-icon icon-master-cart-ic"></li>
                                 <li><span class="custom-icon icon-no-name-cart-2-ic"></li>
-                            </ul> 
+                            </ul>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -382,6 +381,7 @@
 <script src="js/bootstrap.min.js"></script>
 
 <script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
 <script src="js/jquery.formstyler.min.js"></script>
 <script src="js/plugins.min.js"></script>
 </body>
