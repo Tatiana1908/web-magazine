@@ -54,9 +54,6 @@ label{
 .justify-sp-around{
 	justify-content: space-around;
 }
-.flex-flown{
-	flex-flow: column;
-}
 .flex-basis{
 	flex-basis: 100%;
 }
@@ -558,6 +555,25 @@ header .bottom-header .users-controls .badge span{
 		margin-left: 15px;
 	}
 }
+.load-more{
+	background-color: #fff;
+	padding: 30px 0;
+	margin-top: 80px;
+}
+.load-more:hover{
+	cursor: pointer;
+}
+.load-more span.circle{
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	background-color: #ff5912;
+	border-radius: 50%;
+}
+.load-more span+span{
+	margin-left: 6px;
+}
+
 .items-carousel{
 	min-height: 650px;
 	background: url("../img/carousel-img-1.jpg") no-repeat center / cover;
@@ -571,6 +587,9 @@ a.order-now:hover{
 }
 .item-flexslider{
 	position: static;
+}
+.carousel-inner .item:hover{
+	box-shadow: none;
 }
 .items-carousel-description{
 	padding-left: calc(8.3333% + 30px);
@@ -681,24 +700,6 @@ a.order-now:hover{
 	.items-carousel-description span.subtitle{
 		font-size: 12px;
 	}
-}
-.load-more{
-	background-color: #fff;
-	padding: 30px 0;
-	margin-top: 80px;
-}
-.load-more:hover{
-	cursor: pointer;
-}
-.load-more span.circle{
-	display: inline-block;
-	height: 10px;
-	width: 10px;
-	background-color: #ff5912;
-	border-radius: 50%;
-}
-.load-more span+span{
-	margin-left: 6px;
 }
 .kit{
 	height:100px;
