@@ -1300,6 +1300,18 @@ footer .third-column li+li{
 	footer .second-column li{
 		font-size: 13px;
 	}
+	footer .third-column{
+		width: auto;
+	}
+	.col-footer-2{
+		width: 18%;
+	}
+	.col-footer-4{
+		width: 22%;
+	}
+	footer .first-column span{
+		font-size: 13px;
+	}
 }
 @media (max-width: 991px){
 	footer .footer-content .row{
@@ -1317,7 +1329,7 @@ footer .third-column li+li{
 		    -ms-flex-wrap: nowrap;
 		        flex-wrap: nowrap;
 	}
-	.col-footer-2-12, .col-footer-4{
+	.col-footer-2-12.third-column, .col-footer-4{
 		width: 100%;
 		text-align: center;
 	}
