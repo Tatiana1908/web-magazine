@@ -7,7 +7,6 @@
 	width: 60px;
 	border: none;
 	color: #ff5912;
-	font-size: 18px;
 }
 .jq-number__field input {
 	box-sizing: border-box;
@@ -19,6 +18,7 @@
 	font: 14px Arial, sans-serif;
 	color: #ff5912;
 	text-align: center;
+	font-size: 18px;
 }
 .jq-number__spin{
 	position: absolute;
@@ -39,13 +39,15 @@
 }
 
 .jq-number__spin.minus {
-	top: auto;
+	top: 0px;
 	bottom: 0;
+	transform: translateY(1px);
 }
 
 .jq-number__spin.plus {
 	right: 45px;
 	left: auto;
+	transform: translateY(1px);
 }
 
 .jq-number__spin:before {
